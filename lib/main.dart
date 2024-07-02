@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projet_flutter/views/calculator_view.dart';
+import 'package:projet_flutter/views/camera_view.dart';
 import 'package:projet_flutter/views/photo_view.dart';
 import 'package:projet_flutter/views/resources_view.dart';
 import 'package:projet_flutter/views/todo_view.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/resources': (context) => ResourcesView(),
         '/photo': (context) => PhotoView(),
         '/calculator': (context) => CalculatorView(),
+        '/camera': (context) => CameraView(),
       },
     );
   }

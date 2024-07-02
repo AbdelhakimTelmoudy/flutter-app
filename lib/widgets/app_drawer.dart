@@ -7,35 +7,19 @@ class AppDrawer extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          DrawerHeader(
+          UserAccountsDrawerHeader(
+            accountName: Container(
+              margin: EdgeInsets.only(top: 10),
+              child: Text('USER USER',style: TextStyle(fontSize: 20),),
+            ),
+            accountEmail: Text('user@gmail.com',style: TextStyle(fontSize: 17),),
+            currentAccountPicture: CircleAvatar(
+              backgroundImage: AssetImage('assets/images/img.png'),
+            ),
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
-            child: Row(
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 40,
-                  backgroundImage: NetworkImage('https://via.placeholder.com/150'), // Replace with your image URL
-                ),
-                SizedBox(width: 10),
-                Text(
-                  'Drawer Header',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-              ],
-            ),
           ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Home'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
           ListTile(
             leading: Icon(Icons.public),
             title: Text('Posts'),
@@ -48,6 +32,13 @@ class AppDrawer extends StatelessWidget {
             title: Text('Photo'),
             onTap: () {
               Navigator.pushReplacementNamed(context, '/photo');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.camera),
+            title: Text('Camera View'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/camera');
             },
           ),
           ListTile(

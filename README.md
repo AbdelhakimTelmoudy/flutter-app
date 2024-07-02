@@ -1,16 +1,20 @@
-# projet_flutter
+# App mobile
 
-A new Flutter project.
+## Dependencies
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+- http
+-  image_picker
+-  provider
+- camera
+- path_provider
 
-A few resources to get you started if this is your first Flutter project:
+## Screens
+<img src="captures/capture.png">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Notes:
+- **Dependencies**: List the core dependencies your project relies on, with links to their documentation or pub.dev pages for further details.
+- **Screens**: Provide a brief description of each screen in your Flutter app.
+- **Installation**: Instructions for cloning the repository, navigating to the project directory, and installing dependencies.
+- **Usage**: Include any additional instructions or tips on how to run and use the application.
